@@ -1,0 +1,44 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import products from "../../api/MOSK_ITEMS.json";
+import ImageSwiper from "@/components/ImageSwiper";
+
+export async function getStaticPaths() {
+    return products.map((product) => ({
+        params: { slug: product.slug },
+    }));
+}
+
+const { slug } = Astro.params;
+const product = products.find((item) => item.slug === slug);
+if (!product) {
+    return Astro.redirect("/");
+}
+---
+
+<!doctype html>
+<html lang="ru">
+    <head>
+        <BaseHead title={product.model} description={product.description} />
+    </head>
+
+    <body>
+        <Header />
+
+        <main class="container mx-auto py-10">
+            <div class="product-page">
+                <ImageSwiper product={product} client:load />
+                <div class="product-info">
+                    <h1 class="text-[20px]">{product.model}</h1>
+                    <h2 class="text-lg">{product.description}</h2>
+                    <span class="font-bold text-lg">{product.price} ₸</span>
+                    <button class="product-button"> В корзину </button>
+                </div>
+            </div>
+        </main>
+
+        <Footer />
+    </body>
+</html>

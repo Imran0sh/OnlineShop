@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "slug": "giant-revolt-1",
+    "model": "Giant Revolt 1",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 500000,
+    "description": "Гравийный велосипед Giant Revolt 1",
+    "type": "Gravel"
+  },
+  {
+    "id": 2,
+    "slug": "giant-revolt-2",
+    "model": "Giant Revolt 2",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 430000,
+    "description": "Гравийный велосипед Giant Revolt 2",
+    "type": "Gravel"
+  },
+  {
+    "id": 3,
+    "slug": "giant-revolt-advanced-2",
+    "model": "Giant Revolt Advanced 2",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 920000,
+    "description": "Карбоновый гравийный велосипед Giant",
+    "type": "Gravel"
+  },
+  {
+    "id": 4,
+    "slug": "giant-contend-ar-1",
+    "model": "Giant Contend AR 1",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 620000,
+    "description": "Шоссейный велосипед Giant Contend AR 1",
+    "type": "Road"
+  },
+  {
+    "id": 5,
+    "slug": "giant-contend-ar-2",
+    "model": "Giant Contend AR 2",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 520000,
+    "description": "Шоссейный велосипед Giant Contend AR 2",
+    "type": "Road"
+  },
+  {
+    "id": 6,
+    "slug": "giant-escape-3",
+    "model": "Giant Escape 3",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 280000,
+    "description": "Городской велосипед Giant Escape 3",
+    "type": "City"
+  },
+  {
+    "id": 7,
+    "slug": "trek-checkpoint-alr-4",
+    "model": "Trek Checkpoint ALR 4",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 780000,
+    "description": "Гравийный велосипед Trek Checkpoint",
+    "type": "Gravel"
+  },
+  {
+    "id": 8,
+    "slug": "trek-domane-al-2",
+    "model": "Trek Domane AL 2",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 490000,
+    "description": "Шоссейный велосипед Trek Domane",
+    "type": "Road"
+  },
+  {
+    "id": 9,
+    "slug": "trek-marlin-7",
+    "model": "Trek Marlin 7",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 470000,
+    "description": "Горный велосипед Trek Marlin 7",
+    "type": "MTB"
+  },
+  {
+    "id": 10,
+    "slug": "merida-silex-400",
+    "model": "Merida Silex 400",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 610000,
+    "description": "Гравийный велосипед Merida Silex",
+    "type": "Gravel"
+  },
+  {
+    "id": 11,
+    "slug": "merida-big-nine-400",
+    "model": "Merida Big Nine 400",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 520000,
+    "description": "Горный велосипед Merida Big Nine",
+    "type": "MTB"
+  },
+  {
+    "id": 12,
+    "slug": "merida-scultura-400",
+    "model": "Merida Scultura 400",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 710000,
+    "description": "Шоссейный велосипед Merida",
+    "type": "Road"
+  },
+  {
+    "id": 13,
+    "slug": "specialized-diverge-e5",
+    "model": "Specialized Diverge E5",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 850000,
+    "description": "Гравийный велосипед Specialized",
+    "type": "Gravel"
+  },
+  {
+    "id": 14,
+    "slug": "specialized-allez",
+    "model": "Specialized Allez",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 690000,
+    "description": "Шоссейный велосипед Specialized Allez",
+    "type": "Road"
+  },
+  {
+    "id": 15,
+    "slug": "cannondale-topstone-3",
+    "model": "Cannondale Topstone 3",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 760000,
+    "description": "Гравийный велосипед Cannondale",
+    "type": "Gravel"
+  },
+  {
+    "id": 16,
+    "slug": "cannondale-caad-optimo",
+    "model": "Cannondale CAAD Optimo",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 630000,
+    "description": "Шоссейный велосипед Cannondale",
+    "type": "Road"
+  },
+  {
+    "id": 17,
+    "slug": "cube-nuroad-pro",
+    "model": "Cube Nuroad Pro",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 590000,
+    "description": "Гравийный велосипед Cube",
+    "type": "Gravel"
+  },
+  {
+    "id": 18,
+    "slug": "cube-attain",
+    "model": "Cube Attain",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 560000,
+    "description": "Шоссейный велосипед Cube",
+    "type": "Road"
+  },
+  {
+    "id": 19,
+    "slug": "cube-aim-pro",
+    "model": "Cube Aim Pro",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 350000,
+    "description": "Горный велосипед Cube",
+    "type": "MTB"
+  },
+  {
+    "id": 20,
+    "slug": "scott-speedster-gravel-30",
+    "model": "Scott Speedster Gravel 30",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 720000,
+    "description": "Гравийный велосипед Scott",
+    "type": "Gravel"
+  },
+  {
+    "id": 21,
+    "slug": "scott-aspect-940",
+    "model": "Scott Aspect 940",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 480000,
+    "description": "Горный велосипед Scott",
+    "type": "MTB"
+  },
+  {
+    "id": 22,
+    "slug": "scott-addict-40",
+    "model": "Scott Addict 40",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 1100000,
+    "description": "Шоссейный велосипед Scott",
+    "type": "Road"
+  },
+  {
+    "id": 23,
+    "slug": "polygon-bend-r5",
+    "model": "Polygon Bend R5",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 410000,
+    "description": "Гравийный велосипед Polygon",
+    "type": "Gravel"
+  },
+  {
+    "id": 24,
+    "slug": "polygon-strattos-s5",
+    "model": "Polygon Strattos S5",
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "price": 460000,
+    "description": "Шоссейный велосипед Polygon",
+    "type": "Road"
+  }
+]
