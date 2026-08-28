@@ -2,6 +2,7 @@
 import HeaderLink from "./HeaderLink.astro";
 import search from "../assets/img/search.svg";
 import HederSearch from "./catalog/HederSearch.tsx";
+import { Cart } from "@/components/Cart/Cart.tsx";
 ---
 
 <header class="top-0 z-50 w-full bg-white/95">
@@ -76,6 +77,9 @@ import HederSearch from "./catalog/HederSearch.tsx";
                 <img src={search.src} alt="Поиск" class="h-5 w-5 opacity-60" />
             </div>
         </div>
+
+        <!-- Корзина -->
+        <Cart client:load />
     </div>
 
     <!-- Навигация -->
@@ -87,6 +91,7 @@ import HederSearch from "./catalog/HederSearch.tsx";
                     <HeaderLink href="/about"> О нас </HeaderLink>
                     <HeaderLink href="/blog"> Наши работы </HeaderLink>
                     <HeaderLink href="/catalog"> Каталог </HeaderLink>
+                    <HeaderLink href="/cart"> Корзина </HeaderLink>
                 </div>
             </nav>
         </div>
