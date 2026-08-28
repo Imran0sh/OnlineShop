@@ -3,19 +3,30 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import products from "../../api/MOSK_ITEMS.json";
-import ImageSwiper from "@/components/ImageSwiper";
+import { CarouselDemo } from "@/components/shadcn-components/Carousel.tsx";
 
 export async function getStaticPaths() {
     return products.map((product) => ({
-        params: { slug: product.slug },
+        params: {
+            slug: product.slug,
+        },
     }));
 }
 
 const { slug } = Astro.params;
+
 const product = products.find((item) => item.slug === slug);
+
 if (!product) {
     return Astro.redirect("/");
 }
+
+const componentLabels: Record<string, string> = {
+    handlebar: "Руль",
+    stem: "Вынос",
+    seatpost: "Подседельный штырь",
+    saddle: "Седло",
+};
 ---
 
 <!doctype html>
@@ -28,15 +39,343 @@ if (!product) {
         <Header />
 
         <main class="container mx-auto py-10">
-            <div class="product-page">
-                <ImageSwiper product={product} client:load />
+            <!-- Основная информация -->
+            <section class="product-page">
+                <CarouselDemo product={product} client:load />
+
                 <div class="product-info">
-                    <h1 class="text-[20px]">{product.model}</h1>
-                    <h2 class="text-lg">{product.description}</h2>
-                    <span class="font-bold text-lg">{product.price} ₸</span>
+                    <span class="text-sm text-gray-500">
+                        {product.type}
+                    </span>
+
+                    <h1 class="text-3xl font-bold">
+                        {product.model}
+                    </h1>
+
+                    <p class="text-lg text-gray-600">
+                        {product.description}
+                    </p>
+
+                    <span class="font-bold text-2xl">
+                        {product.price.toLocaleString("ru-RU")} ₸
+                    </span>
+
+                    <!-- Размер -->
+                    <div>
+                        <h3 class="font-semibold">Размер рамы</h3>
+
+                        <div class="flex gap-2">
+                            {
+                                product.sizes.map((size) => (
+                                    <button class="border rounded-md px-4 py-2">
+                                        {size}
+                                    </button>
+                                ))
+                            }
+                        </div>
+                    </div>
+
                     <button class="product-button"> В корзину </button>
                 </div>
-            </div>
+            </section>
+
+            <!-- Характеристики -->
+            <section class="mt-16">
+                <h2 class="text-2xl font-bold mb-6">Характеристики</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Рама -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Рама</h3>
+
+                        <div class="space-y-2">
+                            <p>
+                                <span class="font-medium">Материал:</span>
+                                {product.specifications.frame.material}
+                            </p>
+
+                            <p>
+                                <span class="font-medium">Тип:</span>
+                                {product.specifications.frame.type}
+                            </p>
+
+                            {
+                                product.specifications.frame.axle && (
+                                    <p>
+                                        <span class="font-medium">Ось:</span>
+                                        {product.specifications.frame.axle}
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.frame.dropout && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Дропаут:
+                                        </span>
+                                        {product.specifications.frame.dropout}
+                                    </p>
+                                )
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Вилка -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Вилка</h3>
+
+                        <div class="space-y-2">
+                            <p>
+                                <span class="font-medium">Материал:</span>
+                                {product.specifications.fork.material}
+                            </p>
+
+                            {
+                                product.specifications.fork.steerer && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Рулевая:
+                                        </span>
+                                        {product.specifications.fork.steerer}
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.fork.axle && (
+                                    <p>
+                                        <span class="font-medium">Ось:</span>
+                                        {product.specifications.fork.axle}
+                                    </p>
+                                )
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Групсет -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Трансмиссия</h3>
+
+                        <div class="space-y-2">
+                            <p>
+                                <span class="font-medium">Бренд:</span>
+                                {product.specifications.groupset.brand}
+                            </p>
+
+                            <p>
+                                <span class="font-medium">Модель:</span>
+                                {product.specifications.groupset.model}
+                            </p>
+
+                            <p>
+                                <span class="font-medium"
+                                    >Количество передач:</span
+                                >
+                                {product.specifications.groupset.gears}
+                            </p>
+
+                            {
+                                product.specifications.groupset.shifters && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Манетки:
+                                        </span>
+                                        {
+                                            product.specifications.groupset
+                                                .shifters
+                                        }
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.groupset
+                                    .frontDerailleur && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Передний переключатель:
+                                        </span>
+                                        {
+                                            product.specifications.groupset
+                                                .frontDerailleur
+                                        }
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.groupset
+                                    .rearDerailleur && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Задний переключатель:
+                                        </span>
+                                        {
+                                            product.specifications.groupset
+                                                .rearDerailleur
+                                        }
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.groupset.cassette && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Кассета:
+                                        </span>
+                                        {
+                                            product.specifications.groupset
+                                                .cassette
+                                        }
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.groupset.crankset && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Система:
+                                        </span>
+                                        {
+                                            product.specifications.groupset
+                                                .crankset
+                                        }
+                                    </p>
+                                )
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Тормоза -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Тормоза</h3>
+
+                        <div class="space-y-2">
+                            <p>
+                                <span class="font-medium">Тип:</span>
+                                {product.specifications.brakes.type}
+                            </p>
+
+                            {
+                                product.specifications.brakes.model && (
+                                    <p>
+                                        <span class="font-medium">Модель:</span>
+                                        {product.specifications.brakes.model}
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.brakes.rotors && (
+                                    <p>
+                                        <span class="font-medium">Роторы:</span>
+                                        {product.specifications.brakes.rotors}
+                                    </p>
+                                )
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Колёса -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Колёса</h3>
+
+                        <div class="space-y-2">
+                            <p>
+                                <span class="font-medium">Размер:</span>
+                                {product.specifications.wheels.size}
+                            </p>
+
+                            {
+                                product.specifications.wheels.rims && (
+                                    <p>
+                                        <span class="font-medium">Обода:</span>
+                                        {product.specifications.wheels.rims}
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.wheels.material && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Материал:
+                                        </span>
+                                        {product.specifications.wheels.material}
+                                    </p>
+                                )
+                            }
+
+                            <p>
+                                <span class="font-medium">Покрышки:</span>
+                                {product.specifications.wheels.tires}
+                            </p>
+
+                            {
+                                product.specifications.wheels.tubeless !==
+                                    undefined && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Tubeless:
+                                        </span>
+                                        {product.specifications.wheels.tubeless
+                                            ? "Да"
+                                            : "Нет"}
+                                    </p>
+                                )
+                            }
+
+                            {
+                                product.specifications.wheels
+                                    .maxTireClearance && (
+                                    <p>
+                                        <span class="font-medium">
+                                            Максимальная ширина покрышки:
+                                        </span>
+                                        {
+                                            product.specifications.wheels
+                                                .maxTireClearance
+                                        }
+                                    </p>
+                                )
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Вес -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-3">Вес</h3>
+
+                        <p>
+                            {product.specifications.weight}
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Компоненты -->
+            <section class="mt-16">
+                <h2 class="text-2xl font-bold mb-6">Компоненты</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {
+                        Object.entries(product.specifications.components).map(
+                            ([key, value]) => (
+                                <div class="flex gap-1 py-3">
+                                    <span class="font-medium">
+                                        {componentLabels[key] ?? key}:
+                                    </span>
+
+                                    <span class="text-gray-600">{value}</span>
+                                </div>
+                            ),
+                        )
+                    }
+                </div>
+            </section>
         </main>
 
         <Footer />

@@ -61,15 +61,6 @@ body {
     height: 100%;
 }
 
-.border {
-    border-radius: 15px;
-}
-
-.border-b {
-    border-bottom: 2px solid;
-    border-image: var(--gradient1) 1;
-}
-
 .border-r {
     border-right: 1px solid;
     border-image: var(--gradient2) 1;
@@ -117,17 +108,16 @@ body {
 .product-page {
     display: flex;
     justify-content: space-between;
-    gap: 36px;
-    padding: 54px;
-    width: 80%;
+    padding-top: 36px;
 }
 
 /* product info classes */
 .product-info {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    flex: 0 0 300px;
+    gap: 10px;
+    padding-left: 48px;
+    flex: 0 0 400px;
 }
 
 .product-button {

@@ -3,216 +3,1584 @@
     "id": 1,
     "slug": "giant-revolt-1",
     "model": "Giant Revolt 1",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 500000,
-    "description": "Гравийный велосипед Giant Revolt 1",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Giant Revolt 1 — универсальный гравийный велосипед для быстрых поездок по асфальту, гравийным дорогам и лёгкому бездорожью. Алюминиевая рама ALUXX сочетается с карбоновой вилкой и современной трансмиссией Shimano CUES 2x10. Велосипед рассчитан как на ежедневные поездки по городу, так и на длительные загородные маршруты.",
+    "purpose": [
+      "Городские поездки",
+      "Гравийные дороги",
+      "Дальние путешествия",
+      "Любительские тренировки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "ALUXX-grade aluminum",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "Flip Chip",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Advanced-grade composite",
+        "type": "-",
+        "model": "-",
+        "steerer": "Full-composite OverDrive",
+        "travel": "-",
+        "axle": "12 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "CUES U6030",
+        "gears": "2x10",
+        "shifters": "Shimano CUES U6030",
+        "frontDerailleur": "Shimano CUES U6030",
+        "rearDerailleur": "Shimano CUES U6020",
+        "cassette": "Shimano CS-LG300 11-39T",
+        "crankset": "Shimano FC-U6030-2 32/46T",
+        "chain": "KMC X11"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano CUES U6030",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Giant S-X2",
+        "material": "Алюминий",
+        "hubs": "Giant alloy",
+        "tires": "Giant CrossCut AT 2",
+        "size": "700x38C",
+        "tubeless": true,
+        "maxTireClearance": "53 mm"
+      },
+      "components": {
+        "handlebar": "Giant Contact XR D-Fuse",
+        "stem": "Giant Contact",
+        "seatpost": "Giant D-Fuse alloy",
+        "saddle": "Giant Grit"
+      },
+      "weight": "10 кг"
+    },
+    "sizes": ["XS", "S", "M", "M/L", "L", "XL"]
   },
   {
     "id": 2,
     "slug": "giant-revolt-2",
     "model": "Giant Revolt 2",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 430000,
-    "description": "Гравийный велосипед Giant Revolt 2",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Giant Revolt 2 — доступный и универсальный гравийный велосипед для города, загородных поездок и маршрутов с различным покрытием. Алюминиевая рама ALUXX и карбоновая вилка обеспечивают хороший баланс между прочностью, комфортом и управляемостью. Трансмиссия Shimano CUES 2x9 позволяет подобрать подходящую передачу как для ровных участков, так и для подъёмов.",
+    "purpose": [
+      "Городские поездки",
+      "Гравийные дороги",
+      "Загородные маршруты",
+      "Велотуризм"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "ALUXX-grade aluminum",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "Flip Chip",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Advanced-grade composite",
+        "type": "-",
+        "model": "-",
+        "steerer": "Full-composite OverDrive",
+        "travel": "-",
+        "axle": "12 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "CUES U3030",
+        "gears": "2x9",
+        "shifters": "Shimano CUES U3030",
+        "frontDerailleur": "Shimano CUES U6030",
+        "rearDerailleur": "Shimano CUES U4020",
+        "cassette": "Shimano CS-LG300 11-36T",
+        "crankset": "Shimano FC-U6030-2 32/46T",
+        "chain": "KMC X11"
+      },
+      "brakes": {
+        "type": "Механические дисковые",
+        "model": "Shimano BR-RS305",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Giant S-X2",
+        "material": "Алюминий",
+        "hubs": "Giant alloy",
+        "tires": "Giant CrossCut GRIP 1",
+        "size": "700x45C",
+        "tubeless": true,
+        "maxTireClearance": "53 mm"
+      },
+      "components": {
+        "handlebar": "Giant Contact XR Ergo-Control",
+        "stem": "Giant Contact",
+        "seatpost": "Giant D-Fuse alloy",
+        "saddle": "Giant Grit"
+      },
+      "weight": "10 кг"
+    },
+    "sizes": ["XS", "S", "M", "M/L", "L", "XL"]
   },
   {
     "id": 3,
     "slug": "giant-revolt-advanced-2",
     "model": "Giant Revolt Advanced 2",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 920000,
-    "description": "Карбоновый гравийный велосипед Giant",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Giant Revolt Advanced 2 — производительный карбоновый гравийный велосипед для длительных поездок, быстрых тренировок и маршрутов с различным покрытием. Карбоновая рама снижает вес и помогает эффективно передавать усилие на педали, а трансмиссия Shimano GRX 2x12 обеспечивает широкий диапазон передач.",
+    "purpose": [
+      "Гравийные дороги",
+      "Дальние путешествия",
+      "Спортивные тренировки",
+      "Быстрые загородные маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Advanced-grade composite",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "Flip Chip",
+        "storage": "Встроенное хранилище в нижней трубе"
+      },
+      "fork": {
+        "material": "Advanced-grade composite",
+        "type": "-",
+        "model": "-",
+        "steerer": "Full-composite OverDrive",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX RX-610 / RX-820",
+        "gears": "2x12",
+        "shifters": "Shimano GRX RX-610",
+        "frontDerailleur": "Shimano GRX RX-820",
+        "rearDerailleur": "Shimano GRX RX-820",
+        "cassette": "Shimano CS-HG710 11-36T",
+        "crankset": "Shimano FC-RX610-2 30/46T",
+        "chain": "KMC X12L-1"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX RX-410",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Giant P-X2",
+        "material": "Алюминий",
+        "hubs": "Giant alloy",
+        "tires": "Giant CrossCut Grip",
+        "size": "700x45C",
+        "tubeless": true,
+        "maxTireClearance": "53 mm"
+      },
+      "components": {
+        "handlebar": "Giant Contact XR D-Fuse",
+        "stem": "Giant Contact AeroLight",
+        "seatpost": "Giant D-Fuse Composite",
+        "saddle": "Giant Grit"
+      },
+      "weight": "9.4 кг"
+    },
+    "sizes": ["XS", "S", "M", "M/L", "L", "XL"]
   },
   {
     "id": 4,
     "slug": "giant-contend-ar-1",
     "model": "Giant Contend AR 1",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 620000,
-    "description": "Шоссейный велосипед Giant Contend AR 1",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Giant Contend AR 1 — универсальный шоссейный велосипед с комфортной геометрией для ежедневных поездок, тренировок и продолжительных маршрутов. Алюминиевая рама ALUXX сочетается с карбоновой вилкой и современной трансмиссией Shimano 105 2x12.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Асфальтовые дороги",
+      "Дальние поездки",
+      "Ежедневные поездки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "ALUXX-grade aluminum",
+        "type": "Endurance Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Advanced-grade composite",
+        "type": "-",
+        "model": "-",
+        "steerer": "Full-composite OverDrive",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "105",
+        "gears": "2x12",
+        "shifters": "Shimano 105",
+        "frontDerailleur": "Shimano 105",
+        "rearDerailleur": "Shimano 105 GS",
+        "cassette": "Shimano 105 11-36T",
+        "crankset": "Shimano 105 34/50T",
+        "chain": "KMC X12L-1"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano 105",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Giant P-R2 Disc",
+        "material": "Алюминий",
+        "hubs": "Giant alloy",
+        "tires": "Giant Gavia Fondo 2",
+        "size": "700x32C",
+        "tubeless": true,
+        "maxTireClearance": "38 mm"
+      },
+      "components": {
+        "handlebar": "Giant D-Fuse SL",
+        "stem": "Giant Contact",
+        "seatpost": "Giant D-Fuse Composite",
+        "saddle": "Giant Approach"
+      },
+      "weight": "9.3 кг"
+    },
+    "sizes": ["XS", "S", "M", "M/L", "L", "XL"]
   },
   {
     "id": 5,
     "slug": "giant-contend-ar-2",
     "model": "Giant Contend AR 2",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 520000,
-    "description": "Шоссейный велосипед Giant Contend AR 2",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Giant Contend AR 2 — универсальный шоссейный велосипед для города, тренировок и продолжительных поездок. Лёгкая алюминиевая рама и карбоновая вилка обеспечивают комфортную управляемость, а трансмиссия Shimano CUES 2x10 подходит для различных дорожных условий.",
+    "purpose": [
+      "Асфальтовые дороги",
+      "Городские поездки",
+      "Любительские тренировки",
+      "Дальние маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "ALUXX-grade aluminum",
+        "type": "Endurance Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Advanced-grade composite",
+        "type": "-",
+        "model": "-",
+        "steerer": "Full-composite OverDrive",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "CUES U6030",
+        "gears": "2x10",
+        "shifters": "Shimano CUES U6030",
+        "frontDerailleur": "Shimano CUES U6030",
+        "rearDerailleur": "Shimano CUES U6020",
+        "cassette": "Shimano CS-LG400 11-39T",
+        "crankset": "Shimano FC-U6030-2 34/50T",
+        "chain": "KMC X11"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano CUES BR-U6030",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Giant S-R2 Disc",
+        "material": "Алюминий",
+        "hubs": "Giant alloy",
+        "tires": "Giant Gavia Fondo 2",
+        "size": "700x32C",
+        "tubeless": true,
+        "maxTireClearance": "38 mm"
+      },
+      "components": {
+        "handlebar": "Giant Connect",
+        "stem": "Giant Sport",
+        "seatpost": "Giant D-Fuse Composite",
+        "saddle": "Giant Approach"
+      },
+      "weight": "10 кг"
+    },
+    "sizes": ["XS", "S", "M", "M/L", "L", "XL"]
   },
   {
     "id": 6,
     "slug": "giant-escape-3",
     "model": "Giant Escape 3",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "City",
     "price": 280000,
-    "description": "Городской велосипед Giant Escape 3",
-    "type": "City"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Giant Escape 3 — практичный городской велосипед для ежедневных поездок, работы, учёбы и прогулок. Прямая посадка обеспечивает хороший обзор дороги, а широкие покрышки помогают уверенно чувствовать себя на городском асфальте.",
+    "purpose": [
+      "Городские поездки",
+      "Ежедневные поездки",
+      "Прогулки",
+      "Парковые дорожки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "ALUXX-grade aluminum",
+        "type": "City / Fitness",
+        "axle": "QR",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Алюминий",
+        "type": "Rigid",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Tourney",
+        "gears": "3x8",
+        "shifters": "Shimano Tourney",
+        "frontDerailleur": "Shimano Tourney",
+        "rearDerailleur": "Shimano Tourney",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano Triple",
+        "chain": "KMC"
+      },
+      "brakes": {
+        "type": "Ободные",
+        "model": "Alloy V-Brake",
+        "rotors": "-"
+      },
+      "wheels": {
+        "rims": "Giant alloy",
+        "material": "Алюминий",
+        "hubs": "Giant alloy",
+        "tires": "Giant S-X3",
+        "size": "700x38C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Giant alloy flat bar",
+        "stem": "Giant Sport",
+        "seatpost": "Giant alloy",
+        "saddle": "Giant Sport Comfort"
+      },
+      "weight": "11 кг"
+    },
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 7,
     "slug": "trek-checkpoint-alr-4",
     "model": "Trek Checkpoint ALR 4",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 780000,
-    "description": "Гравийный велосипед Trek Checkpoint",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Trek Checkpoint ALR 4 — универсальный гравийный велосипед с алюминиевой рамой, созданный для поездок по асфальту, гравию и лёгкому бездорожью. Велосипед сочетает устойчивость, комфорт и большое количество креплений для путешествий.",
+    "purpose": [
+      "Гравийные дороги",
+      "Велотуризм",
+      "Дальние поездки",
+      "Город и пригород"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Alpha Aluminum",
+        "type": "Gravel",
+        "axle": "12 mm thru-axle",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "12 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "CUES",
+        "gears": "2x10",
+        "shifters": "Shimano CUES",
+        "frontDerailleur": "Shimano CUES",
+        "rearDerailleur": "Shimano CUES",
+        "cassette": "Shimano 11-39T",
+        "crankset": "Shimano 46/32T",
+        "chain": "KMC"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Bontrager alloy",
+        "material": "Алюминий",
+        "hubs": "Bontrager",
+        "tires": "Bontrager Girona",
+        "size": "700x40C",
+        "tubeless": true,
+        "maxTireClearance": "45 mm"
+      },
+      "components": {
+        "handlebar": "Bontrager alloy",
+        "stem": "Bontrager",
+        "seatpost": "Bontrager alloy",
+        "saddle": "Bontrager Verse"
+      },
+      "weight": "10.5 кг"
+    },
+    "sizes": ["49", "52", "54", "56", "58", "61"]
   },
   {
     "id": 8,
     "slug": "trek-domane-al-2",
     "model": "Trek Domane AL 2",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 490000,
-    "description": "Шоссейный велосипед Trek Domane",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Trek Domane AL 2 — комфортный шоссейный велосипед для начинающих и опытных любителей. Геометрия endurance делает посадку более удобной для длительных поездок, а дисковые тормоза обеспечивают уверенное торможение в различных условиях.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Асфальтовые дороги",
+      "Дальние поездки",
+      "Город"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Alpha Aluminum",
+        "type": "Endurance Road",
+        "axle": "12 mm thru-axle",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Claris",
+        "gears": "2x8",
+        "shifters": "Shimano Claris",
+        "frontDerailleur": "Shimano Claris",
+        "rearDerailleur": "Shimano Claris",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano 50/34T",
+        "chain": "KMC"
+      },
+      "brakes": {
+        "type": "Механические дисковые",
+        "model": "Tektro",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Bontrager alloy",
+        "material": "Алюминий",
+        "hubs": "Bontrager",
+        "tires": "Bontrager R1",
+        "size": "700x32C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Bontrager alloy",
+        "stem": "Bontrager",
+        "seatpost": "Bontrager alloy",
+        "saddle": "Bontrager Verse"
+      },
+      "weight": "10.5 кг"
+    },
+    "sizes": ["44", "49", "52", "54", "56", "58", "61"]
   },
   {
     "id": 9,
     "slug": "trek-marlin-7",
     "model": "Trek Marlin 7",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "MTB",
     "price": 470000,
-    "description": "Горный велосипед Trek Marlin 7",
-    "type": "MTB"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Trek Marlin 7 — универсальный горный велосипед для лесных дорог, парков, грунтовых маршрутов и лёгких трейлов. Амортизационная вилка и трансмиссия 1x12 позволяют уверенно преодолевать подъёмы и неровные участки.",
+    "purpose": [
+      "Лесные дороги",
+      "Грунтовые маршруты",
+      "Лёгкие трейлы",
+      "Городские поездки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Alpha Silver Aluminum",
+        "type": "Hardtail MTB",
+        "axle": "Boost 141 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Алюминий / сталь",
+        "type": "-",
+        "model": "RockShox Judy Silver",
+        "steerer": "-",
+        "travel": "100 mm",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "SRAM",
+        "model": "SX Eagle",
+        "gears": "1x12",
+        "shifters": "SRAM SX Eagle",
+        "frontDerailleur": "-",
+        "rearDerailleur": "SRAM SX Eagle",
+        "cassette": "SRAM Eagle 11-50T",
+        "crankset": "SRAM SX Eagle 30T",
+        "chain": "SRAM Eagle"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano MT200",
+        "rotors": "180 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Bontrager alloy",
+        "material": "Алюминий",
+        "hubs": "Bontrager",
+        "tires": "Bontrager XR4",
+        "size": "29x2.4",
+        "tubeless": "-",
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Bontrager alloy",
+        "stem": "Bontrager",
+        "seatpost": "Bontrager alloy",
+        "saddle": "Bontrager Arvada"
+      },
+      "weight": "14.15 кг"
+    },
+    "sizes": ["XS", "S", "M", "ML", "L", "XL"]
   },
   {
     "id": 10,
     "slug": "merida-silex-400",
     "model": "Merida Silex 400",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 610000,
-    "description": "Гравийный велосипед Merida Silex",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Merida Silex 400 — универсальный гравийный велосипед с комфортной геометрией и большим запасом места под широкие покрышки. Подходит для асфальта, гравия, лесных дорог и продолжительных путешествий.",
+    "purpose": [
+      "Гравийные дороги",
+      "Велотуризм",
+      "Дальние путешествия",
+      "Смешанные маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Алюминий",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX",
+        "gears": "2x10",
+        "shifters": "Shimano GRX",
+        "frontDerailleur": "Shimano GRX",
+        "rearDerailleur": "Shimano GRX",
+        "cassette": "Shimano 11-36T",
+        "crankset": "Shimano GRX 46/30T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Merida Comp SL",
+        "material": "Алюминий",
+        "hubs": "Merida",
+        "tires": "Maxxis Rambler",
+        "size": "700x45C",
+        "tubeless": true,
+        "maxTireClearance": "45 mm"
+      },
+      "components": {
+        "handlebar": "Merida Expert GR II",
+        "stem": "Merida Comp CC",
+        "seatpost": "Merida Comp",
+        "saddle": "Merida Comp SL"
+      },
+      "weight": "11.1 кг"
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": 11,
     "slug": "merida-big-nine-400",
     "model": "Merida Big Nine 400",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "MTB",
     "price": 520000,
-    "description": "Горный велосипед Merida Big Nine",
-    "type": "MTB"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Merida Big Nine 400 — лёгкий хардтейл для лесных дорог, грунта, парков и спортивных тренировок. Большие колёса 29 дюймов обеспечивают стабильность и хороший накат, а амортизационная вилка сглаживает неровности.",
+    "purpose": [
+      "Грунтовые дороги",
+      "Лесные маршруты",
+      "Парковые дорожки",
+      "Любительские тренировки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Алюминий",
+        "type": "Hardtail MTB",
+        "axle": "Boost",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Алюминий",
+        "type": "-",
+        "model": "Manitou Markhor",
+        "steerer": "-",
+        "travel": "100 mm",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Deore",
+        "gears": "1x12",
+        "shifters": "Shimano Deore",
+        "frontDerailleur": "-",
+        "rearDerailleur": "Shimano Deore",
+        "cassette": "Shimano 10-51T",
+        "crankset": "Shimano 30T",
+        "chain": "Shimano"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano MT200",
+        "rotors": "180 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Merida Comp CC",
+        "material": "Алюминий",
+        "hubs": "Merida",
+        "tires": "Maxxis Ikon",
+        "size": "29x2.2",
+        "tubeless": "-",
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Merida Comp",
+        "stem": "Merida Comp",
+        "seatpost": "Merida Comp",
+        "saddle": "Merida Comp SL"
+      },
+      "weight": "12 кг"
+    },
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 12,
     "slug": "merida-scultura-400",
     "model": "Merida Scultura 400",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 710000,
-    "description": "Шоссейный велосипед Merida",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Merida Scultura 400 — спортивный шоссейный велосипед с лёгкой алюминиевой рамой и карбоновой вилкой. Модель сочетает эффективное ускорение, точное управление и комфорт для длительных тренировок.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Спортивные поездки",
+      "Асфальтовые маршруты",
+      "Дальние дистанции"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Алюминий",
+        "type": "Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "105",
+        "gears": "2x12",
+        "shifters": "Shimano 105",
+        "frontDerailleur": "Shimano 105",
+        "rearDerailleur": "Shimano 105",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano 50/34T",
+        "chain": "KMC X12"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano 105",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Merida Comp SL",
+        "material": "Алюминий",
+        "hubs": "Merida",
+        "tires": "Continental Ultra Sport",
+        "size": "700x28C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Merida Expert",
+        "stem": "Merida Expert",
+        "seatpost": "Merida Comp",
+        "saddle": "Merida Comp SL"
+      },
+      "weight": "9.5 кг"
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": 13,
     "slug": "specialized-diverge-e5",
     "model": "Specialized Diverge E5",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 850000,
-    "description": "Гравийный велосипед Specialized",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Specialized Diverge E5 — универсальный гравийный велосипед для асфальта, гравия и лёгкого бездорожья. Алюминиевая рама обеспечивает необходимую жёсткость, а карбоновая вилка помогает снизить вибрации на неровных дорогах.",
+    "purpose": [
+      "Гравийные дороги",
+      "Асфальт",
+      "Велотуризм",
+      "Смешанные маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "E5 Premium Aluminum",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Future Shock carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX",
+        "gears": "2x10",
+        "shifters": "Shimano GRX",
+        "frontDerailleur": "Shimano GRX",
+        "rearDerailleur": "Shimano GRX",
+        "cassette": "Shimano 11-36T",
+        "crankset": "Shimano GRX 46/30T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Specialized Axis Elite",
+        "material": "Алюминий",
+        "hubs": "Axis",
+        "tires": "Pathfinder Sport",
+        "size": "700x38C",
+        "tubeless": true,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Specialized Adventure Gear",
+        "stem": "Specialized",
+        "seatpost": "Specialized alloy",
+        "saddle": "Bridge Sport"
+      },
+      "weight": "10.5 кг"
+    },
+    "sizes": ["49", "52", "54", "56", "58", "61"]
   },
   {
     "id": 14,
     "slug": "specialized-allez",
     "model": "Specialized Allez",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 690000,
-    "description": "Шоссейный велосипед Specialized Allez",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Specialized Allez — лёгкий алюминиевый шоссейный велосипед для тренировок, быстрых поездок и ежедневного использования. Спортивная геометрия делает велосипед отзывчивым и позволяет эффективно разгоняться на асфальте.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Асфальтовые дороги",
+      "Быстрые поездки",
+      "Любительские старты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "E5 Premium Aluminum",
+        "type": "Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Tiagra",
+        "gears": "2x10",
+        "shifters": "Shimano Tiagra",
+        "frontDerailleur": "Shimano Tiagra",
+        "rearDerailleur": "Shimano Tiagra",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano Tiagra 50/34T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano Tiagra",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Specialized Axis",
+        "material": "Алюминий",
+        "hubs": "Axis",
+        "tires": "RoadSport",
+        "size": "700x28C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Specialized alloy",
+        "stem": "Specialized",
+        "seatpost": "Specialized alloy",
+        "saddle": "Body Geometry"
+      },
+      "weight": "9.2 кг"
+    },
+    "sizes": ["49", "52", "54", "56", "58", "61"]
   },
   {
     "id": 15,
     "slug": "cannondale-topstone-3",
     "model": "Cannondale Topstone 3",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 760000,
-    "description": "Гравийный велосипед Cannondale",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Cannondale Topstone 3 — универсальный гравийный велосипед для асфальта, грунтовых дорог и длительных путешествий. Комфортная геометрия и широкие покрышки позволяют уверенно проходить участки с неровным покрытием.",
+    "purpose": [
+      "Гравийные дороги",
+      "Велотуризм",
+      "Дальние путешествия",
+      "Смешанные маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "SmartForm C2 Alloy",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX",
+        "gears": "2x10",
+        "shifters": "Shimano GRX",
+        "frontDerailleur": "Shimano GRX",
+        "rearDerailleur": "Shimano GRX",
+        "cassette": "Shimano 11-36T",
+        "crankset": "Shimano GRX 46/30T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "WTB ST i23",
+        "material": "Алюминий",
+        "hubs": "Formula",
+        "tires": "WTB Riddler",
+        "size": "700x37C",
+        "tubeless": true,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Cannondale 3",
+        "stem": "Cannondale 3",
+        "seatpost": "Cannondale 3",
+        "saddle": "Cannondale Stage CX"
+      },
+      "weight": "10.5 кг"
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": 16,
     "slug": "cannondale-caad-optimo",
     "model": "Cannondale CAAD Optimo",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 630000,
-    "description": "Шоссейный велосипед Cannondale",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Cannondale CAAD Optimo — спортивный алюминиевый шоссейный велосипед для тренировок и быстрых поездок. Жёсткая рама обеспечивает эффективную передачу усилия, а карбоновая вилка помогает снизить вибрации от дороги.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Асфальтовые дороги",
+      "Быстрые поездки",
+      "Любительские старты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "SmartForm C2 Alloy",
+        "type": "Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "105",
+        "gears": "2x12",
+        "shifters": "Shimano 105",
+        "frontDerailleur": "Shimano 105",
+        "rearDerailleur": "Shimano 105",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano 50/34T",
+        "chain": "KMC X12"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano 105",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Cannondale RD 2.0",
+        "material": "Алюминий",
+        "hubs": "Formula",
+        "tires": "Vittoria Zaffiro",
+        "size": "700x28C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Cannondale 3",
+        "stem": "Cannondale 3",
+        "seatpost": "Cannondale 3",
+        "saddle": "Cannondale Stage Ergo"
+      },
+      "weight": "9.5 кг"
+    },
+    "sizes": ["48", "51", "54", "56", "58", "61"]
   },
   {
     "id": 17,
     "slug": "cube-nuroad-pro",
     "model": "Cube Nuroad Pro",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 590000,
-    "description": "Гравийный велосипед Cube",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Cube Nuroad Pro — универсальный гравийный велосипед для смешанных маршрутов. Он сочетает спортивную управляемость шоссейного велосипеда с возможностью установки широких покрышек и поездок по грунтовым дорогам.",
+    "purpose": [
+      "Гравийные дороги",
+      "Асфальт",
+      "Загородные поездки",
+      "Велотуризм"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Aluminium Lite",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "CUBE TS Disc",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX",
+        "gears": "2x10",
+        "shifters": "Shimano GRX",
+        "frontDerailleur": "Shimano GRX",
+        "rearDerailleur": "Shimano GRX",
+        "cassette": "Shimano 11-36T",
+        "crankset": "Shimano GRX 46/30T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "CUBE GR 2.3",
+        "material": "Алюминий",
+        "hubs": "CUBE",
+        "tires": "Schwalbe G-One Allround",
+        "size": "700x45C",
+        "tubeless": true,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "CUBE Gravel Race",
+        "stem": "CUBE Performance",
+        "seatpost": "CUBE Performance",
+        "saddle": "Natural Fit Venec"
+      },
+      "weight": "10.5 кг"
+    },
+    "sizes": ["50", "53", "56", "58", "60", "62"]
   },
   {
     "id": 18,
     "slug": "cube-attain",
     "model": "Cube Attain",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 560000,
-    "description": "Шоссейный велосипед Cube",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Cube Attain — комфортный шоссейный велосипед для тренировок и продолжительных поездок. Endurance-геометрия делает посадку удобной, а карбоновая вилка помогает снизить вибрации на асфальте.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Дальние поездки",
+      "Асфальтовые дороги",
+      "Ежедневные поездки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Aluminium Lite",
+        "type": "Endurance Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "CUBE TS Disc",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Tiagra",
+        "gears": "2x10",
+        "shifters": "Shimano Tiagra",
+        "frontDerailleur": "Shimano Tiagra",
+        "rearDerailleur": "Shimano Tiagra",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano Tiagra 50/34T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano Tiagra",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "CUBE RA 1.9 CX",
+        "material": "Алюминий",
+        "hubs": "CUBE",
+        "tires": "Conti Ultra Sport",
+        "size": "700x30C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "CUBE Compact",
+        "stem": "CUBE Performance",
+        "seatpost": "CUBE Performance",
+        "saddle": "Natural Fit Venec"
+      },
+      "weight": "9.8 кг"
+    },
+    "sizes": ["50", "53", "56", "58", "60", "62"]
   },
   {
     "id": 19,
     "slug": "cube-aim-pro",
     "model": "Cube Aim Pro",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "MTB",
     "price": 350000,
-    "description": "Горный велосипед Cube",
-    "type": "MTB"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Cube Aim Pro — универсальный горный велосипед начального уровня для города, парков, лесных дорог и лёгких грунтовых маршрутов. Амортизационная вилка и широкие покрышки позволяют комфортно ездить по неровным покрытиям.",
+    "purpose": [
+      "Городские поездки",
+      "Парковые дорожки",
+      "Лесные дороги",
+      "Грунтовые маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Aluminium Lite",
+        "type": "Hardtail MTB",
+        "axle": "135 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Алюминий",
+        "type": "-",
+        "model": "SR Suntour XCT",
+        "steerer": "-",
+        "travel": "100 mm",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Deore",
+        "gears": "1x10",
+        "shifters": "Shimano Deore",
+        "frontDerailleur": "-",
+        "rearDerailleur": "Shimano Deore",
+        "cassette": "Shimano 11-46T",
+        "crankset": "CUBE 32T",
+        "chain": "KMC"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano MT200",
+        "rotors": "180 / 160 mm"
+      },
+      "wheels": {
+        "rims": "CUBE ZX20",
+        "material": "Алюминий",
+        "hubs": "CUBE",
+        "tires": "CUBE IMPAC Smartpac",
+        "size": "29x2.25",
+        "tubeless": "-",
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "CUBE Rise Trail Bar",
+        "stem": "CUBE Performance",
+        "seatpost": "CUBE Performance",
+        "saddle": "Natural Fit Venec"
+      },
+      "weight": "13 кг"
+    },
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 20,
     "slug": "scott-speedster-gravel-30",
     "model": "Scott Speedster Gravel 30",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 720000,
-    "description": "Гравийный велосипед Scott",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Scott Speedster Gravel 30 — быстрый и универсальный гравийный велосипед для асфальта, гравия и продолжительных загородных поездок. Алюминиевая рама и карбоновая вилка обеспечивают хороший баланс скорости и комфорта.",
+    "purpose": [
+      "Гравийные дороги",
+      "Асфальт",
+      "Дальние поездки",
+      "Спортивные тренировки"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "6061 Aluminum",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX",
+        "gears": "2x10",
+        "shifters": "Shimano GRX",
+        "frontDerailleur": "Shimano GRX",
+        "rearDerailleur": "Shimano GRX",
+        "cassette": "Shimano 11-36T",
+        "crankset": "Shimano GRX 46/30T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Syncros Race X25",
+        "material": "Алюминий",
+        "hubs": "Syncros",
+        "tires": "Schwalbe G-One",
+        "size": "700x45C",
+        "tubeless": true,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Syncros Creston",
+        "stem": "Syncros",
+        "seatpost": "Syncros",
+        "saddle": "Syncros Tofino"
+      },
+      "weight": "10 кг"
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": 21,
     "slug": "scott-aspect-940",
     "model": "Scott Aspect 940",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "MTB",
     "price": 480000,
-    "description": "Горный велосипед Scott",
-    "type": "MTB"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Scott Aspect 940 — универсальный горный велосипед для лесных дорог, грунтовых маршрутов и повседневных поездок. Геометрия рассчитана на стабильное управление, а амортизационная вилка помогает справляться с неровностями.",
+    "purpose": [
+      "Горные маршруты",
+      "Лесные дороги",
+      "Грунтовые дороги",
+      "Город"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "6061 Aluminum",
+        "type": "Hardtail MTB",
+        "axle": "Boost",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Алюминий",
+        "type": "-",
+        "model": "RockShox Judy",
+        "steerer": "-",
+        "travel": "100 mm",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "Deore",
+        "gears": "1x12",
+        "shifters": "Shimano Deore",
+        "frontDerailleur": "-",
+        "rearDerailleur": "Shimano Deore",
+        "cassette": "Shimano 10-51T",
+        "crankset": "Shimano 30T",
+        "chain": "Shimano"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano MT200",
+        "rotors": "180 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Syncros X-25",
+        "material": "Алюминий",
+        "hubs": "Syncros",
+        "tires": "Kenda Booster",
+        "size": "29x2.4",
+        "tubeless": "-",
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Syncros Alloy",
+        "stem": "Syncros",
+        "seatpost": "Syncros",
+        "saddle": "Syncros"
+      },
+      "weight": "13 кг"
+    },
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 22,
     "slug": "scott-addict-40",
     "model": "Scott Addict 40",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 1100000,
-    "description": "Шоссейный велосипед Scott",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Scott Addict 40 — лёгкий карбоновый шоссейный велосипед для спортивных тренировок и продолжительных маршрутов. Карбоновая рама обеспечивает эффективную передачу мощности, а endurance-геометрия сохраняет комфорт во время длительной езды.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Спортивные поездки",
+      "Длинные дистанции",
+      "Горные маршруты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "HMF Carbon",
+        "type": "Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "HMF Carbon",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "12x100 mm"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "105",
+        "gears": "2x12",
+        "shifters": "Shimano 105",
+        "frontDerailleur": "Shimano 105",
+        "rearDerailleur": "Shimano 105",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano 105 50/34T",
+        "chain": "KMC X12"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano 105",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Syncros RP2.0",
+        "material": "Алюминий",
+        "hubs": "Syncros",
+        "tires": "Schwalbe One",
+        "size": "700x30C",
+        "tubeless": true,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Syncros Creston",
+        "stem": "Syncros",
+        "seatpost": "Syncros Duncan",
+        "saddle": "Syncros Tofino"
+      },
+      "weight": "8.5 кг"
+    },
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": 23,
     "slug": "polygon-bend-r5",
     "model": "Polygon Bend R5",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Gravel",
     "price": 410000,
-    "description": "Гравийный велосипед Polygon",
-    "type": "Gravel"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Polygon Bend R5 — универсальный гравийный велосипед для начинающих и опытных велосипедистов. Модель подходит для асфальта, гравийных дорог и загородных маршрутов, предлагая комфортную посадку и широкие покрышки.",
+    "purpose": [
+      "Гравийные дороги",
+      "Асфальт",
+      "Загородные поездки",
+      "Велотуризм"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Алюминий",
+        "type": "Gravel",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "GRX",
+        "gears": "2x10",
+        "shifters": "Shimano GRX",
+        "frontDerailleur": "Shimano GRX",
+        "rearDerailleur": "Shimano GRX",
+        "cassette": "Shimano 11-36T",
+        "crankset": "Shimano GRX 46/30T",
+        "chain": "KMC X10"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano GRX",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Entity alloy",
+        "material": "Алюминий",
+        "hubs": "Entity",
+        "tires": "Schwalbe G-One",
+        "size": "700x40C",
+        "tubeless": true,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Entity alloy",
+        "stem": "Entity",
+        "seatpost": "Entity alloy",
+        "saddle": "Entity"
+      },
+      "weight": "10.5 кг"
+    },
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 24,
     "slug": "polygon-strattos-s5",
     "model": "Polygon Strattos S5",
-    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "year": 2026,
+    "type": "Road",
     "price": 460000,
-    "description": "Шоссейный велосипед Polygon",
-    "type": "Road"
+    "image": ["/images/giant-revolt-1.svg", "/images/giant-revolt-2.svg"],
+    "description": "Polygon Strattos S5 — спортивный шоссейный велосипед для асфальтовых дорог, тренировок и быстрых поездок. Алюминиевая рама обеспечивает хорошее сочетание жёсткости и веса, а карбоновая вилка помогает повысить комфорт на неровном асфальте.",
+    "purpose": [
+      "Шоссейные тренировки",
+      "Асфальтовые дороги",
+      "Быстрые поездки",
+      "Любительские старты"
+    ],
+    "specifications": {
+      "frame": {
+        "material": "Алюминий",
+        "type": "Road",
+        "axle": "12x142 mm",
+        "dropout": "-",
+        "storage": "-"
+      },
+      "fork": {
+        "material": "Карбон",
+        "type": "Carbon fork",
+        "model": "-",
+        "steerer": "-",
+        "travel": "-",
+        "axle": "-"
+      },
+      "groupset": {
+        "brand": "Shimano",
+        "model": "105",
+        "gears": "2x12",
+        "shifters": "Shimano 105",
+        "frontDerailleur": "Shimano 105",
+        "rearDerailleur": "Shimano 105",
+        "cassette": "Shimano 11-34T",
+        "crankset": "Shimano 105 50/34T",
+        "chain": "KMC X12"
+      },
+      "brakes": {
+        "type": "Гидравлические дисковые",
+        "model": "Shimano 105",
+        "rotors": "160 / 160 mm"
+      },
+      "wheels": {
+        "rims": "Entity alloy",
+        "material": "Алюминий",
+        "hubs": "Entity",
+        "tires": "Vittoria Zaffiro",
+        "size": "700x28C",
+        "tubeless": false,
+        "maxTireClearance": "-"
+      },
+      "components": {
+        "handlebar": "Entity alloy",
+        "stem": "Entity",
+        "seatpost": "Entity alloy",
+        "saddle": "Entity"
+      },
+      "weight": "9.3 кг"
+    },
+    "sizes": ["S", "M", "L", "XL"]
   }
 ]
