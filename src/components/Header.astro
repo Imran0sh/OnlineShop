@@ -2,7 +2,7 @@
 import HeaderLink from "./HeaderLink.astro";
 import search from "../assets/img/search.svg";
 import HederSearch from "./catalog/HederSearch.tsx";
-import { Cart } from "@/components/Cart/Cart.tsx";
+import CartWrapper from "./Cart/CartWrapper.tsx";
 ---
 
 <header class="top-0 z-50 w-full bg-white/95">
@@ -79,7 +79,7 @@ import { Cart } from "@/components/Cart/Cart.tsx";
         </div>
 
         <!-- Корзина -->
-        <Cart client:load />
+        <CartWrapper />
     </div>
 
     <!-- Навигация -->
@@ -91,7 +91,6 @@ import { Cart } from "@/components/Cart/Cart.tsx";
                     <HeaderLink href="/about"> О нас </HeaderLink>
                     <HeaderLink href="/blog"> Наши работы </HeaderLink>
                     <HeaderLink href="/catalog"> Каталог </HeaderLink>
-                    <HeaderLink href="/cart"> Корзина </HeaderLink>
                 </div>
             </nav>
         </div>

@@ -1,18 +1,10 @@
 import productsData from "../../api/MOSK_ITEMS.json";
 import { useSearchStore } from "../store/SerchStore";
 import { ProductCard } from "@/components/shadcn-components/card-componentProductCard";
+import type { IProduct } from "@/ types/cartType";
+import CartWrapper from "@/components/Cart/CartWrapper";
 
-interface Products {
-  id: number;
-  slug: string;
-  model: string;
-  image: string[];
-  price: number;
-  description: string;
-  type: string;
-}
-
-const PRODUCTS: Products[] = productsData as Products[];
+const PRODUCTS: IProduct[] = productsData as IProduct[];
 
 export default function Catalog() {
   const searchTerm = useSearchStore((state) => state.searchTerm);
@@ -22,19 +14,16 @@ export default function Catalog() {
   );
   return (
     <div className="catalog">
-      {filteredItems.map((product) => (
-        <ProductCard
-          title={product.model}
-          type={product.type}
-          image={product.image}
-          slug={product.slug}
-        />
-      ))}
+      <CartWrapper>
+        {filteredItems.map((product) => (
+          <ProductCard product={product} />
+        ))}
 
-      {/* error */}
-      {filteredItems.length === 0 && (
-        <p>Нечего не найдено по данному запросу</p>
-      )}
+        {/* error */}
+        {filteredItems.length === 0 && (
+          <p>Нечего не найдено по данному запросу</p>
+        )}
+      </CartWrapper>
     </div>
   );
 }

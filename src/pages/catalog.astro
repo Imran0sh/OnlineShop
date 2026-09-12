@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Catalog from "../components/catalog/Catalog";
+import BaseHead from "../components/BaseHead.astro";
 ---
 
-<Layout title="Каталог">
+<BaseHead title="Каталог" description="Каталог товаров" />
+<Layout>
     <Catalog client:load />
 </Layout>

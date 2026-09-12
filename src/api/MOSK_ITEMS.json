@@ -580,7 +580,7 @@
         "hubs": "Bontrager",
         "tires": "Bontrager XR4",
         "size": "29x2.4",
-        "tubeless": "-",
+        "tubeless": false,
         "maxTireClearance": "-"
       },
       "components": {
@@ -712,7 +712,7 @@
         "hubs": "Merida",
         "tires": "Maxxis Ikon",
         "size": "29x2.2",
-        "tubeless": "-",
+        "tubeless": false,
         "maxTireClearance": "-"
       },
       "components": {
@@ -1240,7 +1240,7 @@
         "hubs": "CUBE",
         "tires": "CUBE IMPAC Smartpac",
         "size": "29x2.25",
-        "tubeless": "-",
+        "tubeless": false,
         "maxTireClearance": "-"
       },
       "components": {
@@ -1372,7 +1372,7 @@
         "hubs": "Syncros",
         "tires": "Kenda Booster",
         "size": "29x2.4",
-        "tubeless": "-",
+        "tubeless": false,
         "maxTireClearance": "-"
       },
       "components": {
