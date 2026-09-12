@@ -2,7 +2,7 @@
 import HeaderLink from "./HeaderLink.astro";
 import search from "../assets/img/search.svg";
 import HederSearch from "./catalog/HederSearch.tsx";
-import CartWrapper from "./Cart/CartWrapper.tsx";
+import Cart from "./Cart/Cart.tsx";
 ---
 
 <header class="top-0 z-50 w-full bg-white/95">
@@ -22,9 +22,7 @@ import CartWrapper from "./Cart/CartWrapper.tsx";
                     ></path>
                 </svg>
 
-                <a
-                    class="text-sm font-medium text-slate-700 hover:text-(--blue) transition-colors"
-                >
+                <a class="text-sm font-medium text-slate-700 hover:text-(--blue) transition-colors">
                     +7 (777) xxx xxxx
                 </a>
             </div>
@@ -39,12 +37,11 @@ import CartWrapper from "./Cart/CartWrapper.tsx";
 
                     <path
                         d="M3.87,3.78 C3.56,4.02 3.34,4.27 3.29,4.76 C3.24,5.24 3.16,5.85 3.56,6.71 C3.96,7.57 4.80,8.99 5.69,9.91 C6.58,10.83 8.12,11.76 8.89,12.22 C9.66,12.68 9.81,12.64 10.31,12.67 C10.81,12.70 11.49,12.61 11.87,12.40 C12.24,12.19 12.46,11.69 12.58,11.38 C12.70,11.07 12.70,10.75 12.58,10.53 C12.45,10.32 12.20,10.22 11.82,10.09 C11.44,9.96 10.69,9.69 10.31,9.73 C9.93,9.78 9.81,10.24 9.56,10.36 C9.30,10.47 9.17,10.53 8.80,10.40 C8.43,10.27 7.76,9.93 7.33,9.60 C6.90,9.27 6.52,8.86 6.22,8.44 C5.93,8.03 5.65,7.47 5.56,7.11 C5.46,6.76 5.54,6.54 5.64,6.31 C5.75,6.08 6.16,6.16 6.18,5.73 C6.19,5.31 5.90,4.19 5.73,3.78 C5.56,3.37 5.47,3.29 5.16,3.29 C4.84,3.29 4.18,3.53 3.87,3.78 Z"
-                        fill="#FFFFFF"></path>
+                        fill="#FFFFFF"
+                    ></path>
                 </svg>
 
-                <a
-                    class="text-sm font-medium text-slate-700 hover:text-(--blue) transition-colors"
-                >
+                <a class="text-sm font-medium text-slate-700 hover:text-(--blue) transition-colors">
                     +7 (777) xxx xxxx
                 </a>
             </div>
@@ -55,14 +52,10 @@ import CartWrapper from "./Cart/CartWrapper.tsx";
     <div class="container mx-auto flex items-center gap-8 px-4 py-5">
         <!-- Бренд -->
         <a href="/" class="group flex shrink-0 flex-col leading-none">
-            <h1
-                class="text-3xl font-extrabold tracking-tight text-(--blue) transition-transform group-hover:scale-[1.02]"
-            >
+            <h1 class="text-3xl font-extrabold tracking-tight text-(--blue) transition-transform group-hover:scale-[1.02]">
                 Velo<span class="text-slate-900">Shop</span>
             </h1>
-            <span
-                class="mt-1 text-[10px] font-medium uppercase tracking-[0.25em] text-slate-400"
-            >
+            <span class="mt-1 text-[10px] font-medium uppercase tracking-[0.25em] text-slate-400">
                 магазин велосипедов
             </span>
         </a>
@@ -79,7 +72,7 @@ import CartWrapper from "./Cart/CartWrapper.tsx";
         </div>
 
         <!-- Корзина -->
-        <CartWrapper />
+        <Cart client:load />
     </div>
 
     <!-- Навигация -->

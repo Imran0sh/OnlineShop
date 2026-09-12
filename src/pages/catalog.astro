@@ -6,5 +6,5 @@ import BaseHead from "../components/BaseHead.astro";
 
 <BaseHead title="Каталог" description="Каталог товаров" />
 <Layout>
-    <Catalog client:load />
+    <Catalog client:only="react" />
 </Layout>

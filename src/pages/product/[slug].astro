@@ -4,7 +4,6 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import products from "../../api/MOSK_ITEMS.json";
 import { CarouselDemo } from "@/components/shadcn-components/Carousel.tsx";
-import ProductPageCart from "./ProductPageCart.tsx";
 
 export async function getStaticPaths() {
     return products.map((product) => ({
@@ -67,11 +66,8 @@ const componentLabels: Record<string, string> = {
                             ))}
                         </div>
                     </div>
-
-                    <div class="bg-amber-700">
-                        <!-- CartWrapper компонент -->
-                        <ProductPageCart product={product} client:load />
-                    </div>
+                    <!-- Cart кнопка -->
+                    <div class="bg-amber-700"><!-- Cart компонент --></div>
                 </div>
             </section>
 

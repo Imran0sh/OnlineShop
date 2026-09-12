@@ -2,8 +2,8 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Button } from "@/components/ui/button";
 import { CirclePlus } from "lucide-react";
-import useAddToCart from "@/components/Cart/useAddToCart";
-import type { IProduct } from "@/ types/cartType";
+import type { IProduct } from "@/types/cartType";
+import { useCartManager } from "../../hooks/useCartManager";
 
 import {
   Card,
@@ -19,7 +19,12 @@ interface ItemProps {
 }
 
 export function ProductCard({ product }: ItemProps) {
-  const { addToCart } = useAddToCart();
+  const { addProduct } = useCartManager();
+
+  function handleClick(product: IProduct) {
+    addProduct(product);
+  }
+
   return (
     <Card className="relative mx-auto w-full max-w-sm pt-0">
       <img
@@ -29,14 +34,14 @@ export function ProductCard({ product }: ItemProps) {
       />
       <CardHeader>
         <CardAction>
-          {/* <CartWrapper> */}
+          {/* button add to cart */}
           <div className="flex gap-2">
             <Button
               type="button"
               variant="outline"
               size="icon"
               aria-label="Submit"
-              onClick={() => addToCart(product)}
+              onClick={() => handleClick(product)}
             >
               <CirclePlus />
             </Button>

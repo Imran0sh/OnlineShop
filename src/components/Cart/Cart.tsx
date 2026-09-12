@@ -1,207 +1,48 @@
-import formatPrice from "@/utils/formatPrice";
-import CartProducts from "./CartProductS";
-import useCart from "@/context/cart-context/useCart";
+import { useCartManager } from "../../hooks/useCartManager";
 
-export const Cart = () => {
-  const { products, total, isOpen, openCart, closeCart } = useCart();
+export default function Cart() {
+  const { cart } = useCartManager();
 
-  const handleCheckout = () => {
-    if (total.productQuantity) {
-      alert(
-        `Checkout - Subtotal: ${total.currencyFormat} ${formatPrice(
-          total.totalPrice,
-          total.currencyId,
-        )}`,
-      );
-    } else {
-      alert("Add some product in the cart!");
-    }
-  };
-
-  const handleToggleCart = () => (isOpen ? closeCart() : openCart());
+  // const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0); // manually calculate total items
+  const totalItems = cart.length;
+  const totalPrice = cart.reduce(
+    (sum, item) => sum + item.price * totalItems,
+    0,
+  );
 
   return (
-    <div
-      className={`
-        fixed top-0 right-0 z-[99]
-        box-border h-full w-full
-        bg-primary
-        transition-[right] duration-200
-        md:w-[450px]
-        ${isOpen ? "right-0" : "right-[-100%] md:right-[-450px]"}
-      `}
-    >
-      <button
-        onClick={handleToggleCart}
-        className={`
-          absolute top-0 z-[2]
-          h-[50px] w-[50px]
-          cursor-pointer
-          border-0 p-0
-          text-center leading-[50px] text-[#ececec]
-          transition-[filter]
-          hover:brightness-[85%]
-          focus-visible:outline-3
-          focus-visible:outline-secondary
-          ${
-            isOpen
-              ? "left-0 bg-black md:left-[-50px]"
-              : "left-[-50px] bg-primary"
-          }
-        `}
-      >
-        {isOpen ? (
-          <span>X</span>
-        ) : (
-          <div
-            className="
-              relative inline-block
-              h-[50px] w-[50px]
-              align-middle
-              bg-[url('/cart-icon.png')]
-              bg-contain
-              bg-center
-              bg-no-repeat
-              [background-size:50%]
-            "
+    <div className="h-fit w-[20%] bg-neutral-200 flex flex-col gap-y-2 p-2 rounded-md">
+      <h3 className="text-[1rem] text-neutral-950 font-semibold border-b border-neutral-400 pb-2">
+        Cart:
+      </h3>
+      <ul>
+        {cart.map((item) => (
+          <li
+            key={item.id + item.model}
+            className="text-[0.9rem] text-neutral-800 flex justify-between"
           >
-            <div
-              title="Products in cart quantity"
-              className="
-                absolute bottom-0 right-[5px]
-                inline-block
-                h-[18px] w-[18px]
-                rounded-full
-                bg-secondary
-                text-center
-                text-[0.7em]
-                font-bold
-                leading-[18px]
-                text-[#0c0b10]
-              "
-            >
-              {total.productQuantity}
-            </div>
-          </div>
-        )}
-      </button>
-
-      {isOpen && (
-        <div className="h-full overflow-y-scroll">
-          <div className="box-border px-0 py-[45px] text-center text-[#ececec]">
-            <div
-              className="
-                relative inline-block
-                h-[60px] w-[60px]
-                align-middle
-                mr-[15px]
-                bg-[url('/cart-icon.png')]
-                bg-center
-                bg-no-repeat
-                bg-contain
-                [background-size:50%]
-              "
-            >
-              <div
-                className="
-                  absolute bottom-0 right-[5px]
-                  inline-block
-                  h-[18px] w-[18px]
-                  rounded-full
-                  bg-secondary
-                  text-center
-                  text-[0.7em]
-                  font-bold
-                  leading-[18px]
-                  text-[#0c0b10]
-                "
-              >
-                {total.productQuantity}
-              </div>
-            </div>
-
-            <span className="align-middle text-[1.2em] font-bold">Cart</span>
-          </div>
-
-          <CartProducts products={products} />
-
-          <div
-            className="
-              absolute bottom-0 z-[2]
-              box-border
-              h-[200px] w-full
-              bg-primary
-              p-[5%]
-            "
-          >
-            <div
-              className="
-                inline-block
-                w-[20%]
-                align-middle
-                text-[#5b5a5e]
-              "
-            >
-              SUBTOTAL
-            </div>
-
-            <div
-              className="
-                inline-block
-                w-[80%]
-                align-middle
-                text-right
-                text-[#5b5a5e]
-              "
-            >
-              <p className="m-0 text-[22px] text-secondary">
-                {`${total.currencyFormat} ${formatPrice(
-                  total.totalPrice,
-                  total.currencyId,
-                )}`}
-              </p>
-
-              <p className="m-0">
-                {total.installments ? (
-                  <span>
-                    {`OR UP TO ${total.installments} x ${
-                      total.currencyFormat
-                    } ${formatPrice(
-                      total.totalPrice / total.installments,
-                      total.currencyId,
-                    )}`}
-                  </span>
-                ) : null}
-              </p>
-            </div>
-
-            <button
-              onClick={handleCheckout}
-              autoFocus
-              className="
-                mt-10 w-full
-                cursor-pointer
-                border-0
-                bg-[#0c0b10]
-                px-0 py-[15px]
-                text-center
-                uppercase
-                text-[#ececec]
-                outline-none
-                transition-colors
-                duration-200
-                hover:bg-black
-                focus-visible:outline-3
-                focus-visible:outline-secondary
-              "
-            >
-              Checkout
-            </button>
-          </div>
-        </div>
-      )}
+            <p>
+              {item.model.length > 10
+                ? `${item.model.slice(0, 10)}...`
+                : item.model}
+            </p>
+            {/*<div className="flex items-center gap-x-2">
+              <button onClick={() => removeCart(item.id)}>-</button>
+              <p>{totalItems}</p>
+              <button onClick={() => addCart(item)}>+</button>
+            </div>*/}
+            <p>${(item.price * totalItems).toFixed(2)}</p>
+          </li>
+        ))}
+      </ul>
+      <div className="text-[0.9rem] text-neutral-900 font-medium flex justify-between border-t border-dashed border-neutral-400 pt-2">
+        <p>Total Items:</p>
+        <p>{totalItems}</p>
+      </div>
+      <div className="text-[0.9rem] text-neutral-900 font-medium flex justify-between">
+        <p>Total Price:</p>
+        <p>${totalPrice.toFixed(2)}</p>
+      </div>
     </div>
   );
-};
-
-export default Cart;
+}
