@@ -1,4 +1,4 @@
-import { useSearchStore } from "../store/SerchStore.ts";
+import { useSearchStore } from "../../store.ts";
 import { SearchResults } from "./searchResult.tsx";
 import productList from "../../api/MOSK_ITEMS.json";
 import type { SearchResult } from "./searchResult.tsx";

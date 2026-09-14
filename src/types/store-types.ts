@@ -1,4 +1,4 @@
-import type { IProduct } from "./cartType";
+import type { IProductInCart, IProduct } from "./cartType";
 
 export interface productStore {
   products: IProduct[];
@@ -6,8 +6,9 @@ export interface productStore {
   removeProduct: (id: number) => void;
   updateProduct: (id: number, product: IProduct) => void;
 
-  cart: IProduct[];
-  addToCart: (product: IProduct) => void;
+  cart: IProductInCart[];
+  addFromCart: (product: IProduct) => void;
   removeFromCart: (id: number) => void;
-  updateCart: (id: number, product: IProduct) => void;
+  decreaseFromCart: (id: number) => void;
+  updateCart: (id: number, product: IProductInCart) => void;
 }

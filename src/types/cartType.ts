@@ -67,3 +67,7 @@ export interface IProduct {
 
   sizes: string[];
 }
+
+export interface IProductInCart extends IProduct {
+  quantity: number;
+}

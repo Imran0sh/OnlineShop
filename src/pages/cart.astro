@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cart from "../components/Cart/Cart";
+import BaseHead from "../components/BaseHead.astro";
+---
+
+<BaseHead title="Корзина" description="Корзина товаров" />
+<Layout>
+    <Cart client:only="react" />
+</Layout>

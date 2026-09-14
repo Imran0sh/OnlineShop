@@ -1,4 +1,4 @@
-import { useSearchStore } from "../store/SerchStore";
+import { useSearchStore } from "../../store.ts";
 import { ProductCard } from "@/components/shadcn-components/card-componentProductCard";
 import { useCartManager } from "../../hooks/useCartManager";
 
