@@ -1,3 +1,4 @@
+//Компонент карточки товара
 "use client";
 import { buttonVariants } from "@/components/ui/button";
 import { Button } from "@/components/ui/button";

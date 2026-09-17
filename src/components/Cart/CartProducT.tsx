@@ -1,8 +1,9 @@
+// Компонент отображения товара в корзине
 import type { IProduct } from "@/types/cartType";
 import { useCartManager } from "@/hooks/useCartManager";
 import productsData from "@/api/MOSK_ITEMS.json";
 
-export default function ProductList() {
+export default function CartProduct() {
   // Fetch product data from the API and convert it into an array of `IProduct`.
   const products = productsData as IProduct[];
 
@@ -28,12 +29,7 @@ export default function ProductList() {
           </h3>
           <div className="flex justify-between items-center">
             <p className="text-[0.8rem] text-neutral-600">${product.price}</p>
-            <button
-              onClick={() => addProduct(product)}
-              className="bg-neutral-800 text-[0.8rem] text-neutral-100 p-1 rounded"
-            >
-              Добавить в корзину
-            </button>
+
           </div>
         </div>
       ))}
