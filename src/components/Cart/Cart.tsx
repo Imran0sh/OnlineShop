@@ -1,7 +1,7 @@
 import { useCartManager } from "../../hooks/useCartManager";
 
 export default function Cart() {
-  const { cart, removeFromCart, decreaseFromCart, addFromCart } =
+  const { cart, removeFromCart, decreaseFromCart, addFromCart, clearCart } =
     useCartManager();
 
   // manually calculate total items
@@ -16,9 +16,14 @@ export default function Cart() {
   return (
     <div className="flex justify-center py-5">
       <div className="flex flex-col h-fit w-[30%] bg-neutral-200 gap-y-2 px-5 py-3 rounded-md">
-        <h3 className="text-[1rem] text-neutral-950 font-semibold border-b border-neutral-400 pb-2">
-          Корзина:
-        </h3>
+        <div className="flex items-center justify-between border-b border-neutral-400 pb-2">
+          <h3 className="text-[1rem] text-neutral-950 font-semibold ">
+            Корзина:
+          </h3>
+          <button className="text-[0.9rem]" onClick={clearCart}>
+            Очистить корзину
+          </button>
+        </div>
         <ul>
           {cart.map((item) => (
             <li

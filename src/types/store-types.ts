@@ -11,4 +11,5 @@ export interface productStore {
   removeFromCart: (id: number) => void;
   decreaseFromCart: (id: number) => void;
   updateCart: (id: number, product: IProductInCart) => void;
+  clearCart: () => void;
 }

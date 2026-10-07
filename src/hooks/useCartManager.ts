@@ -7,9 +7,9 @@ export function useCartManager() {
   const cart = useProductStore((state) => state.cart);
   const addToCart = useProductStore((state) => state.addFromCart);
   const removeFromCart = useProductStore((state) => state.removeFromCart);
+  const clearCart = useProductStore((state) => state.clearCart);
   {
-    /*const updateCart = useProductStore((state) => state.updateCart);
-    const removeProduct = useProductStore((state) => state.removeProduct);*/
+    /*const updateCart = useProductStore((state) => state.updateCart);*/
   }
   const decreaseFromCart = useProductStore((state) => state.decreaseFromCart);
   const addFromCart = useProductStore((state) => state.addFromCart);
@@ -28,5 +28,6 @@ export function useCartManager() {
     removeFromCart,
     decreaseFromCart,
     addFromCart,
+    clearCart,
   };
 }

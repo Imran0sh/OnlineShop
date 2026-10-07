@@ -72,7 +72,9 @@ import CounterCart from "@/components/Cart/CouterCart";
         </div>
 
         <!-- Корзина -->
-        <CounterCart client:load />
+        <HeaderLink href="/cart">
+            <CounterCart client:load />
+        </HeaderLink>
     </div>
 
     <!-- Навигация -->
@@ -84,7 +86,6 @@ import CounterCart from "@/components/Cart/CouterCart";
                     <HeaderLink href="/about"> О нас </HeaderLink>
                     <HeaderLink href="/blog"> Наши работы </HeaderLink>
                     <HeaderLink href="/catalog"> Каталог </HeaderLink>
-                    <HeaderLink href="/cart"> Корзина </HeaderLink>
                 </div>
             </nav>
         </div>
