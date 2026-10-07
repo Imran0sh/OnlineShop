@@ -20,7 +20,10 @@ export default function Cart() {
           <h3 className="text-[1rem] text-neutral-950 font-semibold ">
             Корзина:
           </h3>
-          <button className="text-[0.9rem]" onClick={clearCart}>
+          <button
+            className="text-[0.9rem] transition-all active:scale-95 active:opacity-70"
+            onClick={clearCart}
+          >
             Очистить корзину
           </button>
         </div>
