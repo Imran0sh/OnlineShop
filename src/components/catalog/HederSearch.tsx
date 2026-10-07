@@ -1,15 +1,13 @@
 import { useSearchStore } from "../../store.ts";
-import { SearchResults } from "./searchResult.tsx";
+import { SearchResults } from "./SearchResult.tsx";
 import productList from "../../api/MOSK_ITEMS.json";
-import type { SearchResult } from "./searchResult.tsx";
+import type { SearchResult } from "./SearchResult.tsx";
 
 export default function HederSearch() {
   const { searchTerm, setSearchTerm } = useSearchStore();
 
-  const results = productList.filter(
-    ({ model, description }) =>
-      model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      description.toLowerCase().includes(searchTerm.toLowerCase()),
+  const results = productList.filter(({ model }) =>
+    model.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   const isVisible = searchTerm.trim() !== "" && results.length > 0;
