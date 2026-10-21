@@ -1,14 +1,32 @@
 // src/store.ts
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { productStore } from "@/types/store-types";
-import productsData from "@/api/MOSK_ITEMS.json";
+import type { productStore } from "@/types/store-types.ts";
+import { supabase } from "./lib/supabase.ts";
 
 export const useProductStore = create<productStore>()(
   persist(
     (set) => ({
       // Products типо под админку минус товар
-      products: productsData,
+      products: [],
+      loading: false,
+
+      fetchProducts: async () => {
+        set({ loading: true });
+
+        const { data, error } = await supabase.from("products").select("*");
+
+        if (error) {
+          console.error("Ошибка загрузки товаров:", error.message);
+          set({ loading: false });
+          return;
+        }
+
+        set({
+          products: data ?? [],
+          loading: false,
+        });
+      },
 
       // Add product to cart (button +, catalog)
       addProduct: (product) =>

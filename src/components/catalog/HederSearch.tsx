@@ -1,14 +1,28 @@
 import { useSearchStore } from "../../store.ts";
 import { SearchResults } from "./SearchResult.tsx";
-import productList from "../../api/MOSK_ITEMS.json";
+import { getProducts } from "../../lib/getProducts.ts";
 import type { SearchResult } from "./SearchResult.tsx";
+import { useEffect, useState } from "react";
 
 export default function HederSearch() {
   const { searchTerm, setSearchTerm } = useSearchStore();
+  const [products, setProducts] = useState<SearchResult[]>([]);
 
-  const results = productList.filter(({ model }) =>
+  useEffect(() => {
+    getProducts()
+      .then((data) => {
+        console.log("Товары из Supabase:", data);
+        console.log("Количество товаров:", data?.length);
+        setProducts(data ?? []);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
+  const results = products.filter(({ model }) =>
     model.toLowerCase().includes(searchTerm.toLowerCase()),
   );
+  console.log("results", results);
+  console.log("products", products);
 
   const isVisible = searchTerm.trim() !== "" && results.length > 0;
 

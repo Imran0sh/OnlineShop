@@ -12,4 +12,7 @@ export interface productStore {
   decreaseFromCart: (id: number) => void;
   updateCart: (id: number, product: IProductInCart) => void;
   clearCart: () => void;
+
+  loading: boolean;
+  fetchProducts: () => Promise<void>;
 }
