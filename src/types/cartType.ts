@@ -8,6 +8,7 @@ export interface IProduct {
   image: string[];
   description: string;
   purpose: string[];
+  sizes: string[];
 
   specifications: {
     frame: {
@@ -64,8 +65,6 @@ export interface IProduct {
 
     weight: string;
   };
-
-  sizes: string[];
 }
 
 export interface IProductInCart extends IProduct {

@@ -53,7 +53,7 @@ export function ProductCard({ product }: ItemProps) {
       </CardHeader>
       <CardFooter>
         <a
-          href={`/product/${product?.slug}`}
+          href={`/catalog/${product?.slug}`}
           className={buttonVariants({ size: "lg", className: "w-full" })}
         >
           Смотреть

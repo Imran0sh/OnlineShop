@@ -2,7 +2,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { productStore } from "@/types/store-types.ts";
-import { supabase } from "./lib/supabase.ts";
+import { getProducts } from "../src/lib/getProducts.ts";
 
 export const useProductStore = create<productStore>()(
   persist(
@@ -14,16 +14,10 @@ export const useProductStore = create<productStore>()(
       fetchProducts: async () => {
         set({ loading: true });
 
-        const { data, error } = await supabase.from("products").select("*");
-
-        if (error) {
-          console.error("Ошибка загрузки товаров:", error.message);
-          set({ loading: false });
-          return;
-        }
+        const data = await getProducts();
 
         set({
-          products: data ?? [],
+          products: data,
           loading: false,
         });
       },
