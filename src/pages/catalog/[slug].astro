@@ -6,20 +6,16 @@ import { CarouselDemo } from "@/components/shadcn-components/Carousel.tsx";
 import AddToCart from "../../components/addToCart.tsx";
 import { getProducts } from "@/lib/getProducts";
 
-const products = await getProducts();
-
 export async function getStaticPaths() {
     const products = await getProducts();
+
     return products.map((product) => ({
-        params: {
-            slug: product.slug,
-        },
+        params: { slug: product.slug },
+        props: { product },
     }));
 }
 
-const { slug } = Astro.params;
-
-const product = products.find((item) => item.slug === slug);
+const { product } = Astro.props;
 
 if (!product) {
     return Astro.redirect("/");
