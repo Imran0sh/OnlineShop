@@ -4,7 +4,10 @@ export async function getProducts() {
   const { data, error } = await supabase.from("products").select("*");
 
   if (error) {
-    throw new Error(`Ошибка Supabase: ${error.message}`);
+    console.error("Supabase error:", error);
+    throw new Error(`Ошибка Supabase: ${error.message}`, {
+      cause: error,
+    });
   }
 
   return data ?? [];
