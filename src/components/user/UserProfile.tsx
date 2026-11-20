@@ -98,10 +98,15 @@ export default function UserProfile() {
             </div>
 
             {/*LogOut*/}
-            <div className="flex items-center p-3 gap-3 text-red-500">
-              <LogOut />
-              <button onClick={handleSignOut}>Выйти из акаунта</button>
-            </div>
+            <button
+              onClick={handleSignOut}
+              className="flex w-full items-center gap-3 rounded-md p-3
+                         text-red-500 transition-colors
+                         hover:bg-red-50 cursor-pointer"
+            >
+              <LogOut className="w-5 h-5" />
+              Выйти из аккаунта
+            </button>
           </>
         ) : (
           <button onClick={handleSingIn}>Войти через Google</button>
