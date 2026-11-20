@@ -3,6 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 import search from "../assets/img/search.svg";
 import HederSearch from "./catalog/HederSearch.tsx";
 import CounterCart from "@/components/Cart/CouterCart";
+import Profile from "@/components/user/UserProfile.tsx";
 ---
 
 <header class="top-0 z-50 w-full bg-white/95">
@@ -71,12 +72,15 @@ import CounterCart from "@/components/Cart/CouterCart";
             </div>
         </div>
 
-        <!-- Корзина -->
-        <HeaderLink href="/cart">
-            <CounterCart client:load />
-        </HeaderLink>
+        <div class="flex justify-between gap-5">
+            <!-- Корзина -->
+            <HeaderLink href="/cart">
+                <CounterCart client:load />
+            </HeaderLink>
 
-        <button id="google-login">log in</button>
+            <!-- Профиль -->
+            <Profile client:load />
+        </div>
     </div>
 
     <!-- Навигация -->

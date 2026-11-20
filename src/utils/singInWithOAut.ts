@@ -10,6 +10,6 @@ export async function signIn() {
   });
 
   if (error) {
-    console.log("logIn:", error);
+    console.log("Ошибка авторизации:", error.message);
   }
 }

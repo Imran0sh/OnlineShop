@@ -1,5 +1,4 @@
 import { createServerClient, parseCookieHeader } from "@supabase/ssr";
-import { supabase } from "../../lib/supabase.ts";
 import type { APIRoute } from "astro";
 
 export const prerender = false;
